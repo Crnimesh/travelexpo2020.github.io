@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     <meta charset="UTF-8" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+     <link
+      href="https://fonts.googleapis.com/css?family=Vollkorn:400,400i,600,700,900&display=swap"
+      rel="stylesheet"
+     />
+     <link rel="stylesheet" href="../cssfile/contact.css" />
+    <!-- <link rel="stylesheet" href="../cssfile/style.css"/> -->
+    <title>Contact Form</title>
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <span class="big-circle"></span>
+      <img src="../images/shape.png" class="square" alt="" />
+      <div class="form">
+        <div class="contact-info">
+          <h3 class="title">Let's get in touch</h3>
+          <p class="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+            dolorum adipisci recusandae praesentium dicta!
+          </p>
+
+          <div class="info">
+            <div class="information">
+              <img src="images/location.png" class="icon" alt="" />
+              <p>Street No.1470, New Baneshwor, Kathmandu, Nepal</p>
+            </div>
+            <div class="information">
+              <img src="images/email.png" class="icon" alt="" />
+              <p>exponepal@travel.com.np</p>
+            </div>
+            <div class="information">
+              <img src="images/phone.png" class="icon" alt="" />
+              <p>(+977)-9862162517</p>
+            </div>
+          </div>
+
+          <div class="social-media">
+            <p>Connect with us :</p>
+            <div class="social-icons">
+              <a href="#">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <span class="circle one"></span>
+          <span class="circle two"></span>
+
+          <form action="index.html" autocomplete="off">
+            <h3 class="title">Contact us</h3>
+            <div class="input-container">
+              <input type="text" name="name" id="title" class="input" />
+              <label for="">Username</label>
+              <span>Username</span>
+            </div>
+            <div class="input-container">
+              <input type="email" name="email" id="title" class="input" />
+              <label for="">Email</label>
+              <span>Email</span>
+            </div>
+            <div class="input-container">
+              <input type="tel" name="phone" id="title" class="input" />
+              <label for="">Phone</label>
+              <span>Phone</span>
+            </div>
+            <div class="input-container textarea">
+              <textarea name="message" id="title" class="input"></textarea>
+              <label for="">Message</label>
+              <span>Message</span>
+            </div>
+            <input type="submit" value="Send" class="btn" />
+          </form>
+  <script>
+        let movies = [];
+        // example {id:1592304983049, title: 'Deadpool', year: 2015}
+        const addMovie = (ev)=>{
+            ev.preventDefault();  //to stop the form submitting
+            let movie = {
+                id: Date.now(),
+                title: document.getElementById('title').value,
+                year: document.getElementById('yr').value
+            }
+            movies.push(movie);
+            document.forms[0].reset(); // to clear the form for the next entries
+            //document.querySelector('form').reset();
+
+            //for display purposes only
+            console.warn('added' , {movies} );
+            let pre = document.querySelector('#msg pre');
+            pre.textContent = '\n' + JSON.stringify(movies, '\t', 2);
+
+            //saving to localStorage
+            localStorage.setItem('MyMovieList', JSON.stringify(movies) );
+        }
+        document.addEventListener('DOMContentLoaded', ()=>{
+            document.getElementById('btn').addEventListener('click', addMovie);
+        });
+    </script>
+
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-list">
+          <a href="index.html" class="footer-link">Home</a>
+          <a href="tour.html" class="footer-link">Tours</a>
+          <a href="aboutus.html" class="footer-link">About Us</a>
+          <a href="offers.html" class="footer-link">Offer</a>
+          <a href="contact.html" class="footer-link">Contact</a>
+        </div>
+        <p class="footer-paragraph">
+          Copyright &copy; DambarJaishi2020||All Rights Reserved.
+        </p>
+      </footer>
+
+    <script src="../jsfile/contact.js"></script>
+    <script src="../jsfile/script.js"></script>
+
+  </body>
+</html>

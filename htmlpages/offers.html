@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+    <title>Ohrid Travel Guide</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../cssfile/offer.css">
+<!-- <link rel="stylesheet" type="text/css" href="../cssfile/style.css"> -->
+
+</head>
+<body>
+  <div class="container">
+      <!-- Navbar -->
+      <div class="open-navbar-icon navbar-icon center">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <div class="navbar-wrapper">
+        <nav class="navbar">
+          <div class="close-navbar-icon navbar-icon center">
+            <div class="line line-1"></div>
+            <div class="line line-2"></div>
+          </div>
+          <div class="nav-list">
+            <a href="index.html" class="nav-link center">Home</a>
+            <a href="tour.html" class="nav-link center">Tours</a>
+            <a href="aboutus.html" class="nav-link center">About Us</a>
+            <a href="offers.html" class="nav-link center">Offer</a>
+            <a href="contact.html" class="nav-link center">Contact</a>
+          </div>
+        </nav>
+      </div>
+      <!-- End of Navbar -->
+</body>
+
+ <section id="empty"></section>
+<section id="tours">
+        <h1>We are exited to offering you</h1>
+        <div class="tours-container">
+            <div class="box-tour">
+                <img src="../images/pasupatinath.jpg">
+                <div class="box-text">
+                    <h2>Visit Pashupati"Lord Shiva"</h2>
+                    <h3>Temple</h3>
+                    <a href="tour1.html">Book Tour @199$</a>
+                </div>
+            </div>
+            <div class="box-tour">
+                <img src="../images/muktinath.jpg">
+                <div class="box-text">
+                    <h2>Visit Muktinath</h2>
+                    <h3>Temple</h3>
+                    <a href="tour4.html">Book Tour @399$</a>
+                </div>
+            </div>
+            <div class="box-tour">
+                <img src="../images/pkhr.jpg">
+                <div class="box-text">
+                    <h2>Visit Pokhara Fewa and More</h2>
+                    <h3>Lake$Mount</h3>
+                    <a href="tour5.html">Book Tour @699$</a>
+                </div>
+            </div>
+            <div class="box-tour">
+                <img src="../images/lumbini.jpg">
+                <div class="box-text">
+                    <h2>Visit Lumbini</h2>
+                    <h3>Lord Buddha</h3>
+                    <a href="tour6.html">Book Tour @299$</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- section video -->
+    <section id="video">
+           <div class="video-container">
+           <iframe width="560" height="315" src="https://www.youtube.com/embed/t9Y1zRQqyg0?start=37" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+           </div>
+    </section>
+
+     <!-- section blog -->
+    <section id="blog">
+        <h1>Expo Nepal Travelling Guides...</h1>
+        <div class="blog-container">
+            <div class="blog-box">
+                <img src="../images/raralake.jpg">
+                <div class="blog-box-container">
+                    <h1>Rara-Lake</h1>
+                    <p>Best and Awesome Place to visit inside of nepal ...</p>
+                    <time>19.09.2019</time>
+                    <a href="blog1.html">Read More</a>
+                </div>
+            </div>
+            <div class="blog-box">
+                <img src="../images/mnt2.jpg">
+                <div class="blog-box-container">
+                    <h1>Mt.Everest(88848)</h1>
+                    <p>Higest peak around The world, ...</p>
+                    <time>18.09.2019</time>
+                    <a href="blog2.html">Read More</a>
+                </div>
+            </div>
+            <div class="blog-box">
+                <img src="../images/mustang.jpg">
+                <div class="blog-box-container">
+                    <h1>Mustang</h1>
+                    <p>Best place to visit inside Nepal ...</p>
+                    <time>17.09.2018</time>
+                    <a href="blog3.html">Read More</a>
+                </div>
+            </div>
+            <div class="blog-box">
+                <img src="../images/pkhra2.jpg">
+                <div class="blog-box-container">
+                    <h1>Pokhara</h1>
+                    <p>Famouse place in nepal ...</p>
+                    <time>16.09.2018</time>
+                    <a href="blog4.html">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+      <footer class="footer">
+        <div class="footer-list">
+          <a href="index.html" class="footer-link">Home</a>
+          <a href="tour.html" class="footer-link">Tours</a>
+          <a href="aboutus.html" class="footer-link">About Us</a>
+          <a href="offer.html" class="footer-link">Offer</a>
+          <a href="contact.html" class="footer-link">Contact</a>
+        </div>
+        <p class="footer-paragraph">
+          Copyright &copy; DambarJaishi2020||All Rights Reserved.
+        </p>
+      </footer>
+      <!-- End of Footer -->
+
+<body>
+  <!-- Back to top -->
+    <a href="#" id="scroll-top"><i class="fas fa-angle-up"></i></a>
+    
+    <script src="lottie.js"></script>
+    <script src="../jsfile/script.js"></script>
+    <script type="text/javascript">
+          <!-- Menu -->
+          $(document).ready(function() {
+              $('.hb-button').on('click', function() {
+                $('nav ul.nav-menu').toggleClass('show');
+              });
+          });
+        
+          <!-- back to top -->
+          $(function () {  
+              var scrollButton = $('#scroll-top');
+              $(window).scroll(function() {
+                $(this).scrollTop() >= 400 ? scrollButton.show() : scrollButton.hide();
+              });
+          });
+    </script>
+
+</body>
+</html>

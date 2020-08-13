@@ -1,0 +1,270 @@
+/*Common Css Style*/
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Vollkorn", serif;
+  list-style-type: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  outline: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --primary-color: #2b81e4;
+  --secondary-color: #eee;
+  --white-color: #fff;
+  --grey-color: #555;
+  --light-grey-color: #777;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: var(--secondary-color);
+  margin: 3.5rem;
+  box-shadow: 0 1rem 3rem var(--grey-color);
+  overflow: hidden;
+}
+/*End of common css style*/
+
+@import url('https://fonts.googleapis.com/css?family=Allura|Josefin+Sans');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: #81c644;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.wrapper{
+  margin-top: 10%;
+}
+
+.wrapper h1{
+  font-family: 'Allura', cursive;
+  font-size: 52px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.team{
+  display: flex;
+  justify-content: center;
+  width: auto;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.team .team_member{
+  background: #fff;
+  margin: 5px;
+  margin-bottom: 50px;
+  width: 300px;
+  padding: 20px;
+  line-height: 20px;
+  color: #8e8b8b;  
+  position: relative;
+}
+
+.team .team_member h3{
+  color: #81c644;
+  font-size: 26px;
+  margin-top: 50px;
+}
+
+.team .team_member p.role{
+  color: #ccc;
+  margin: 12px 0;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.team .team_member .team_img{
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.team .team_member .team_img img{
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+}
+/*footer*/
+.footer {
+  background-color: var(--grey-color);
+  padding: 4rem 0 2rem 0;
+  border-bottom: 0vh;
+  border-bottom-width: 
+}
+
+.footer-list {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-link {
+  font-size: 2rem;
+  color: var(--solid);
+  margin: 0 2rem;
+  padding: 0.3rem 3rem;
+  letter-spacing: 0.3rem;
+  transition: all 0.2s;
+}
+
+.footer-link:hover {
+  transform: rotate(-10deg);
+  box-shadow: 0 2rem 3rem #000;
+}
+
+.footer-paragraph {
+  text-align: center;
+  font-size: 1.5rem;
+  color: var(--secondary-color);
+  letter-spacing: 0.2rem;
+  margin-top: 5rem;
+}
+
+/*Device friendly */
+@media (max-width: 1200px) {
+  .cards-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    margin: 3rem 0;
+  }
+
+  .story-bg {
+    width: 85%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .nav-list {
+    flex-direction: column;
+  }
+
+  .nav-link {
+    flex-grow: 1;
+  }
+
+  .header-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+  }
+
+  .heading {
+    font-size: 6rem;
+  }
+
+  .header-paragraph {
+    font-size: 2.5rem;
+  }
+
+  .popular-tours-heading {
+    font-size: 6rem;
+  }
+
+  .story-bg {
+    transform: skewX(0);
+  }
+
+  .story {
+    transform: skewX(0);
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .story-image {
+    margin-bottom: 3rem;
+  }
+
+  .footer-link {
+    padding: 0.3rem 2rem;
+    margin: 0 1rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .header-paragraph {
+    display: none;
+  }
+
+  .popular-tours-heading {
+    font-size: 5rem;
+  }
+
+  .contact-form {
+    width: 90%;
+  }
+
+  .footer-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-link {
+    margin: 1rem 0;
+  }
+}
+
+@media (max-width: 650px) {
+  .container {
+    margin: 0;
+  }
+
+  .open-navbar-icon {
+    top: 2.5rem;
+    left: 2.5rem;
+  }
+
+  .navbar-wrapper {
+    padding: 0;
+  }
+
+  .close-navbar-icon {
+    right: 4rem;
+  }
+
+  .header {
+    height: 100vh;
+  }
+
+  .contact-heading {
+    font-size: 6rem;
+  }
+
+  .contact-form {
+    padding: 2rem;
+    height: 40rem;
+  }
+}
+
+@media (max-width: 500px) {
+  html {
+    font-size: 45%;
+  }
+}
